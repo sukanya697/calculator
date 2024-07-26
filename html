@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" class="form-control mb-3 text-right" readonly>
+            <div class="keypad">
+                <button class="btn btn-secondary btn-lg" onclick="appendToDisplay('7')">7</button>
+                <button class="btn btn-secondary btn-lg" onclick="appendToDisplay('8')">8</button>
+                <button class="btn btn-secondary btn-lg" onclick="appendToDisplay('9')">9</button>
+                <button class="btn btn-secondary btn-lg" onclick="appendToDisplay('/')">/</button>
+                
+                <!-- Add more buttons for other digits and operations -->
+                
+                <button class="btn btn-primary btn-lg" onclick="clearDisplay()">C</button>
+                <button class="btn btn-primary btn-lg" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
