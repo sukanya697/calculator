@@ -1,0 +1,17 @@
+javascript
+// Function to append clicked button value to display
+function appendToDisplay(value) {
+    document.getElementById('display').value += value;
+}
+
+// Function to clear the display
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
+
+// Function to evaluate the expression in the display
+function calculate() {
+    let expression = document.getElementById('display').value;
+    let result = eval(expression); // Using eval for simplicity (not recommended for production)
+    document.getElementById('display').value = result;
+}
